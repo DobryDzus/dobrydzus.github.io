@@ -1,16 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
-a{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
     padding: 0;
     margin: 0;
     overflow: hidden;
     background-color: pink;
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav{
+li{
     font-family: 'Exo 2', sans-serif;
-    float: left;
+    list-style: none;
+}
+
+a{
+    height: 100%;
+    width: 200px;
 }
 
 .header{
@@ -18,9 +31,12 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-nav a{
+li a{
     display: block;
     color: black;
     text-align: center;
@@ -31,4 +47,9 @@ nav a{
 a:hover{
     background-color: #111;
     color: white;
+    transition: ease-in-out 0.5s;
+}
+
+.logo{
+    height: 50px; width: 50px;
 }
