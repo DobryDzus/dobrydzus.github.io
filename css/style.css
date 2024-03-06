@@ -50,6 +50,10 @@ a {
     color: #e24bfe;
 }
   
+.active {
+	color: #e24bfe;
+}
+
 .cta {
     padding: 9px 25px;
     background-color: rgb(226, 75, 254);
