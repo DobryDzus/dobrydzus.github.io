@@ -50,7 +50,7 @@ a {
     color: #e24bfe;
 }
   
-.active {
+.active:hover {
 	color: #e24bfe;
 }
 
