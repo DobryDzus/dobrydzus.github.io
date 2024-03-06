@@ -6,21 +6,26 @@
     padding: 0;
   }
   
-  header {
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 30px 10%;
-    background-color: pink;
-  }
+    background-color: rgb(252, 207, 214);
+}
   
-  .logo {
+.logo{
+    transition: transform 0.3s;
+}
+
+.logo:hover,
+.logo:focus {
+    transform: scale(1.2);
     cursor: pointer;
-  }
-  
-  .bar a,
-  .cta,
-  .overlay__content a {
+}
+.bar a,
+.cta,
+a {
     font-family: "Exo 2", sans-serif;
     font-weight: 500;
     color: #242424;
@@ -28,35 +33,35 @@
     font-size: 1.5em;
   }
   
-  .bar {
+.bar {
     list-style: none;
     display: flex;
-  }
+}
   
-  .bar li {
+.bar li {
     padding: 0px 20px;
-  }
+}
   
-  .bar li a {
+.bar li a {
     transition: color 0.3s ease 0s;
-  }
+}
   
-  .bar li a:hover {
-    color: #0088a9;
-  }
+.bar li a:hover {
+    color: #e24bfe;
+}
   
-  .cta {
+.cta {
     padding: 9px 25px;
-    background-color: rgb(95, 154, 170);
+    background-color: rgb(226, 75, 254);
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: background-color 0.3s ease 0s;
-  }
+}
   
-  .cta:hover {
-    background-color: rgba(0, 136, 169, 0.8);
-  }
+.cta:hover {
+    background-color: #b53ccb;
+}
   
 .carousel {
 	overflow: hidden;
@@ -102,3 +107,5 @@
 		left: -400%;
 	}
 }
+
+
