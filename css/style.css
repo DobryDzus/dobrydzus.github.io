@@ -1,55 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
+* {
     box-sizing: border-box;
-}
-
-ul{
-    padding: 0;
     margin: 0;
-    overflow: hidden;
+    padding: 0;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
     background-color: pink;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-li{
-    font-family: 'Exo 2', sans-serif;
-    list-style: none;
-}
-
-a{
-    height: 100%;
-    width: 200px;
-}
-
-.header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-li a{
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 16px 28px;
+  }
+  
+  .logo {
+    cursor: pointer;
+  }
+  
+  .bar a,
+  .cta,
+  .overlay__content a {
+    font-family: "Exo 2", sans-serif;
+    font-weight: 500;
+    color: #242424;
     text-decoration: none;
-}
-
-a:hover{
-    background-color: #111;
-    color: white;
-    transition: ease-in-out 0.5s;
-}
-
-.logo{
-    height: 50px; width: 50px;
-}
+    font-size: 1.5em;
+  }
+  
+  .bar {
+    list-style: none;
+    display: flex;
+  }
+  
+  .bar li {
+    padding: 0px 20px;
+  }
+  
+  .bar li a {
+    transition: color 0.3s ease 0s;
+  }
+  
+  .bar li a:hover {
+    color: #0088a9;
+  }
+  
+  .cta {
+    padding: 9px 25px;
+    background-color: rgb(95, 154, 170);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease 0s;
+  }
+  
+  .cta:hover {
+    background-color: rgba(0, 136, 169, 0.8);
+  }
+  
