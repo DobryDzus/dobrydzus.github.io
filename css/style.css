@@ -7,6 +7,11 @@
 	scroll-behavior: smooth;
   }
   
+
+body {
+    font-family: "Exo 2", sans-serif;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -37,6 +42,7 @@ a {
 .bar {
     list-style: none;
     display: flex;
+    position: sticky;
 }
   
 .bar li {
@@ -109,4 +115,39 @@ a {
 	color: black;
 	background-color: black;
 	border-width: 0px;
+}
+
+.products{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.product{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+    background-color: rgb(224, 224, 224);
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 5px rgb(146, 146, 146);
+}
+
+.cena{
+    font-size: 1.5em;
+    font-weight: 700;
+    background-color: rgb(252, 207, 214);
+    padding: 5px;
+    border-radius: 15px;
+    margin-top: 0.5vw;
+    cursor: pointer;
+}
+
+.product p{
+    text-align: center;
+}
+
+.product img{
+    width: 100%;
+    height: 100%;
 }
