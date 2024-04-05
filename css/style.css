@@ -2,27 +2,48 @@
 
 body{
     font-family: 'Exo 2', sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
-li{
-    list-style-type: none;
-    text-decoration: none;
-}
-
-ul{
-    display: flex;
-    flex-direction: row;
-}
-
-.container-nav{
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px;
-    font-size: 1.5em;
+    padding: 30px 10%;
     background-color: #0a0068;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.navbar li{
+    list-style: none;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+a{
+    text-decoration: none;
     color: white;
+
+}
+
+.logo-nav {
+    cursor: pointer;
+    filter: invert(100%) sepia(96%) saturate(15%) hue-rotate(255deg) brightness(103%) contrast(106%);
+    scale: 1.5;
+}
+
+.navbar{
+    display: flex;
+
+}
+
+.cart-nav{
+    scale: 1.2;
 }
