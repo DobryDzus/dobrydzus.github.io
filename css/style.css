@@ -5,6 +5,8 @@ body{
     background-color: #06003a;
 }
 
+
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -36,7 +38,6 @@ a{
 .logo-nav {
     cursor: pointer;
     filter: invert(100%) sepia(96%) saturate(15%) hue-rotate(255deg) brightness(103%) contrast(106%);
-    scale: 1.5;
 }
 
 .navbar{
@@ -44,6 +45,14 @@ a{
 
 }
 
-.cart-nav{
+#cart-nav{
     scale: 1.2;
+    cursor: pointer;
+    margin-top: 0.5vh;
+}
+
+.divider-cart{
+    border-left: 1px solid grey;
+    height: 3vh;
+    margin-right: 2vh;
 }
