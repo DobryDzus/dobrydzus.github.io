@@ -17,7 +17,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 10%;
+    padding: 15px 5%;
     background-color: #0a0068;
     text-decoration: none;
     font-size: 1.5rem;
@@ -38,6 +38,21 @@ a{
 .logo-nav {
     cursor: pointer;
     filter: invert(100%) sepia(96%) saturate(15%) hue-rotate(255deg) brightness(103%) contrast(106%);
+    transition: 0.3s;
+}
+
+.logo-nav:hover{
+    scale: 1.2;
+
+}
+
+.link-nav:hover{
+    background-color: #06003a;
+}
+
+.link-nav{
+    transition: 0.3s;
+    padding: 1.5vh;
 }
 
 .navbar{
@@ -49,10 +64,16 @@ a{
     scale: 1.2;
     cursor: pointer;
     margin-top: 0.5vh;
+    
+}
+
+
+#cart-nav:hover{
+    scale: 1.2;
 }
 
 .divider-cart{
     border-left: 1px solid grey;
     height: 3vh;
-    margin-right: 2vh;
+    margin-right: 3vh;
 }
