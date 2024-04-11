@@ -5,8 +5,6 @@ body{
     background-color: #06003a;
 }
 
-
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -76,4 +74,54 @@ a{
     border-left: 1px solid grey;
     height: 3vh;
     margin-right: 3vh;
+}
+
+.banner{
+    filter: blur(5px) grayscale(50%);
+    height: 100%;
+    width: 100%;
+    
+}
+
+.banner-cont{
+    position: relative;
+}
+
+.banner-textblock{
+    display: block;
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    flex-direction: column;
+    transform: translateY(-50%);
+}
+
+.banner-btn{
+    position: relative;
+    padding: 10px 20px;
+    border: none;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    background: #0a0068;
+    box-shadow: 0 0 25px #0a0068;
+    cursor: pointer;
+}
+
+.banner-btn:hover{
+    box-shadow: 0 0 5px #0a0068,
+    0 0 25px #0a0068,
+    0 0 50px #0a0068
+}
+
+.banner-title{
+    top: calc(-50% - 0.5em);
+    position: absolute;
+    font-size: 3rem;
+    color: white;
+    font-weight: 700;
 }
