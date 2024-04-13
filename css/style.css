@@ -89,11 +89,11 @@ a{
 
 .banner-textblock{
     position: absolute;
-    top: 30%;
+    top: 25%;
     left: 10%;
     flex-direction: column;
-    transform: translateY(-50%);
     color: white;
+    margin-bottom: 20px;
 }
 
 .banner-btn{
