@@ -88,19 +88,22 @@ a{
 }
 
 .banner-textblock{
-    display: block;
     position: absolute;
-    top: 70%;
+    top: 30%;
     left: 10%;
     flex-direction: column;
     transform: translateY(-50%);
+    color: white;
 }
 
 .banner-btn{
-    position: relative;
-    padding: 10px 20px;
+    position: absolute;
+    top: 60%;
+    left: 10%;
+    flex-direction: column;
+    padding: 15px 25px;
     border: none;
-    font-size: 17px;
+    font-size: 19px;
     color: #fff;
     border-radius: 7px;
     letter-spacing: 1px;
@@ -119,9 +122,6 @@ a{
 }
 
 .banner-title{
-    top: calc(-50% - 0.5em);
-    position: absolute;
-    font-size: 3rem;
-    color: white;
+    font-size: 2em;
     font-weight: 700;
 }
