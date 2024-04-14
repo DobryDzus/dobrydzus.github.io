@@ -3,6 +3,7 @@
 body{
     font-family: 'Exo 2', sans-serif;
     background-color: #06003a;
+    scroll-behavior: smooth;
 }
 
 * {
@@ -123,4 +124,29 @@ a{
 .banner-title{
     font-size: 2em;
     font-weight: 700;
+}
+
+.banner-text{
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.produkt-text{
+    color: white;
+
+}
+
+.akce-lane{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5vh 5%;
+}
+
+#akce{
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1em;
 }
