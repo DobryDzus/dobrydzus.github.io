@@ -59,7 +59,6 @@ a{
 
 .navbar{
     display: flex;
-
 }
 
 #cart-nav{
@@ -154,9 +153,70 @@ a{
     margin-top: 1em;
 }
 
+.akce-card{
+    width: 300px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.akce-card:hover{
+    transform: scale(1.05);
+}
+
 .akce-photo{
+    width: 100%;
+    height: 60%;
+
+}
+
+.akce-photo img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 10px;
+    scale: 0.9;
+}
+
+.akce-info{
+    padding: 20px;
+    height: 40%;
+}
+
+.akce-title{
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.akce-desc{
+    margin: 10px 0 10px 0;
+    font-size: 14px;
+    color: white
+}
+
+.akce-price{
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fd4949;
+    margin-right: 10px;
+}
+
+.akce-price-cont{
+    display: flex;
+    align-items: center;
+}
+
+.akce-price-sleva{
+    margin: 0;
+    font-size: 18px;
+    text-decoration: line-through;
+    color: #666;
 }
