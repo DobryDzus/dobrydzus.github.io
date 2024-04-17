@@ -13,7 +13,16 @@
         <a class="logo-nav" href="/"><img src="img/pokehublogotext.svg" alt="logo"></a>
         <nav class="navv">
             <ul class="navbar">
-                <li><a class="link-nav" href="#produkty">Produkty</a></li>
+                <li>
+                    <a class="link-nav" href="#produkty">Produkty</a>
+                    <ul class="dropdown">
+                        <li onclick="location.href = '#temporalforces';" class="dp-item"><p>Temporal Forces</p></li> <!-- js tu je protoze kdyz nastavim padding tak to strasne-->
+                        <li onclick="location.href = '#paldeanfates';" class="dp-item"><p>Paldean Fates</p></li> <!-- blbne. neopravovat a nic nedelat jinak idk -->
+                        <li onclick="location.href = '#paradoxrift';" class="dp-item"><p>Paradox Rift</p></li>
+                        <li onclick="location.href = '#obsidianflames';" class="dp-item"><p>Obsidian Flames</p></li>
+                        <li onclick="location.href = '#limitky';" class="dp-item"><p>Limitky</p></li>
+                    </ul>
+                </li>
                 <li><a class="link-nav" href="#akce">Akce</a></li>
                 <li><a class="link-nav" href="grading.html">Asistovaný grading</a></li>
                 <li><a class="link-nav" href="vykup.html">Výkup</a></li>
@@ -38,11 +47,16 @@
             Předobjednat!
         </button>
     </div>
-
+    <!--
+    AKCE
+    -->
     <div class="akce-cont">
         <h1 id="akce">Akce</h1>
         <div class="akce-lane">
-            <div onclick="pridatDoKosiku(this)" data-nazev="PAF | Paldean Fates Booster Bundle" class="akce-card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="PAF | Paldean Fates Booster Bundle" data-cena="649" class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                </div>
                 <div class="akce-photo">
                     <img src="img/produkty/paldean-fates-booster-bundle-front.png" alt="">
                 </div>
@@ -55,7 +69,11 @@
                     </div>
                 </div>
             </div>
-            <div onclick="pridatDoKosiku(this)" data-nazev="PAR | Paradox Rift Booster Pack" class="akce-card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="PAR | Paradox Rift Booster Pack" data-cena="74" class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                    <span class="posledni-kusy">Poslední kusy</span>
+                </div>
                 <div class="akce-photo">
                     <img src="img/produkty/paradox-rift-booster-garchomp.png" alt="">
                 </div>
@@ -68,7 +86,10 @@
                     </div>
                 </div>
             </div>
-            <div onclick="pridatDoKosiku(this)" data-nazev="OBF | Obsidian Flames Elite Trainer Box" class="akce-card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="OBF | Obsidian Flames Elite Trainer Box" data-cena="879" class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                </div>
                 <div class="akce-photo">
                     <img src="img/produkty/obsidian-flames-etb-front.png" alt="">
                 </div>
@@ -81,7 +102,10 @@
                     </div>
                 </div>
             </div>
-            <div onclick="pridatDoKosiku(this)" data-nazev="PAL | Paldea Evolved Booster Pack" class="akce-card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="PAL | Paldea Evolved Booster Pack" data-cena="70" class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                </div>
                 <div class="akce-photo">
                     <img src="img/produkty/paldea-evolved-booster.png" alt="">
                 </div>
@@ -96,12 +120,258 @@
             </div>
         </div>
     </div>
+    <!--
+    PREDPRODEJ
+    -->
     <div class="predprodej-cont">
         <h1 id="predprodej">Předprodej - Twilight Masquerade</h1>
         <div class="predprodej-lane">
-
+            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Elite Trainer Box" data-cena="979" class="card">
+                <div class="status">
+                    <span class="ocekavame">Očekáváme</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/tw-masquerade-etb.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">TWM | Twilight Masquerade Elite Trainer Box</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">979 Kč</p>
+                    </div>
+                </div>
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Booster Box" data-cena="2999" class="card">
+                <div class="status">
+                    <span class="ocekavame">Očekáváme</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/tw-masquerade-bb.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">TWM | Twilight Masquerade Booster Box</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">2 999 Kč</p>
+                    </div>
+                </div>
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Booster Pack" data-cena="89" class="card">
+                <div class="status">
+                    <span class="ocekavame">Očekáváme</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/tw-masquerade-booster-pack.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">TWM | Twilight Masquerade Booster Pack</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">89 Kč</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- 
+    PRODUKTY
+     -->
+     <div class="produkty-cont">
+        <h1 id="produkty">Všechny produkty</h1>
+        <!-- 
+        TEMPORAL FORCES
+         -->
+        <div id="temporalforces" class="produkty-lane">
+            <div onclick="pridatDoKosiku(this)" data-nazev="TEF | Temporal Forces Booster Pack" data-cena="89" class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/temporal-forces-booster-pack.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">TEF | Temporal Forces Booster Pack</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">89 Kč</p>
+                    </div>
+                </div>           
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="TEF | Temporal Forces Elite Trainer Box Flutter Mane" data-cena="89" class="card">
+                <div class="status">
+                    <span class="ocekavame">Očekáváme</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/temporal-forces-etb-2.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">TEF | Temporal Forces Elite Trainer Box Flutter Mane</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">979 Kč</p>
+                    </div>
+                </div>           
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="TEF | Temporal Forces Elite Trainer Box Iron Thorns" data-cena="89" class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/temporal-forces-etb-1.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">TEF | Temporal Forces Elite Trainer Box Iron Thorns</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">979 Kč</p>
+                    </div>
+                </div>           
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="TEF | Temporal Forces Booster Box" data-cena="89" class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/temporal-forces-bb.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">TEF | Temporal Forces Booster Box</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">2 999 Kč</p>
+                    </div>
+                </div>           
+            </div>
+        </div>
+        <!--
+        PALDEAN FATES
+        -->
+        <div class="produkty-lane">
+            <div onclick="pridatDoKosiku(this)" data-nazev="PAF | Paldean Fates Booster Bundle" data-cena="649" class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/paldean-fates-booster-bundle-front.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">PAF | Paldean Fates Booster Bundle</h4>
+                    <p class="akce-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">649 Kč</p>
+                        <p class="akce-price-sleva">749 Kč</p>
+                    </div>
+                </div>
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="PAF | Paldean Fates " data-cena="89" class="card">
+                <div class="status">
+                    <span class="ocekavame">Očekáváme</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/tw-masquerade-booster-pack.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">PAF | Paldean Fates </h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">89 Kč</p>
+                    </div>
+                </div>           
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Booster Pack" data-cena="89" class="card">
+                <div class="status">
+                    <span class="ocekavame">Očekáváme</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/tw-masquerade-booster-pack.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">TWM | Twilight Masquerade Booster Pack</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">89 Kč</p>
+                    </div>
+                </div>           
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Booster Pack" data-cena="89" class="card">
+                <div class="status">
+                    <span class="ocekavame">Očekáváme</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/tw-masquerade-booster-pack.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">TWM | Twilight Masquerade Booster Pack</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">89 Kč</p>
+                    </div>
+                </div>           
+            </div>
+        </div>
+        <div class="produkty-lane">
+            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Booster Pack" data-cena="89" class="card">
+                <div class="status">
+                    <span class="ocekavame">Očekáváme</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/tw-masquerade-booster-pack.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">TWM | Twilight Masquerade Booster Pack</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">89 Kč</p>
+                    </div>
+                </div>           
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Booster Pack" data-cena="89" class="card">
+                <div class="status">
+                    <span class="ocekavame">Očekáváme</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/tw-masquerade-booster-pack.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">TWM | Twilight Masquerade Booster Pack</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">89 Kč</p>
+                    </div>
+                </div>           
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Booster Pack" data-cena="89" class="card">
+                <div class="status">
+                    <span class="ocekavame">Očekáváme</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/tw-masquerade-booster-pack.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">TWM | Twilight Masquerade Booster Pack</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">89 Kč</p>
+                    </div>
+                </div>           
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Booster Pack" data-cena="89" class="card">
+                <div class="status">
+                    <span class="ocekavame">Očekáváme</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/tw-masquerade-booster-pack.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">TWM | Twilight Masquerade Booster Pack</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">89 Kč</p>
+                    </div>
+                </div>           
+            </div>
+        </div>
+     </div>
 </body>
 <script src="script.js"></script>
 </html>

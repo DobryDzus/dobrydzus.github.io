@@ -61,13 +61,37 @@ a{
     display: flex;
 }
 
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: #0a0068;
+    z-index: 1;
+}
+
+.navbar li:hover .dropdown{
+    display: block;
+}
+
+.dp-item:hover{
+    background-color: #06003a;
+}
+
+.dp-item p{
+    padding: 1.5vh;
+    cursor: pointer;
+}
+
+.dp-item{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
 #cart-nav{
     scale: 1.2;
     cursor: pointer;
     margin-top: 0.5vh;
-    
 }
-
 
 #cart-nav:hover{
     scale: 1.2;
@@ -138,13 +162,6 @@ a{
 
 }
 
-.akce-lane{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 5vh 5%;
-}
-
 #akce, #produkty, #predprodej{
     color: white;
     font-size: 2em;
@@ -153,7 +170,7 @@ a{
     margin-top: 1em;
 }
 
-.akce-card{
+.card{
     width: 300px;
     height: 400px;
     background: rgba(255, 255, 255, 0.15);
@@ -165,7 +182,7 @@ a{
     overflow: hidden;
 }
 
-.akce-card:hover{
+.card:hover{
     transform: scale(1.05);
 }
 
@@ -189,7 +206,7 @@ a{
 
 .akce-title{
     margin: 0;
-    font-size: 20px;
+    font-size: 1.2em;
     font-weight: bold;
     color: white;
     text-align: center;
@@ -219,4 +236,46 @@ a{
     font-size: 18px;
     text-decoration: line-through;
     color: #666;
+}
+
+.predprodej-lane, .akce-lane, .produkty-lane{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5vh 5%;
+}
+
+.status{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 1;
+}
+
+.skladem, .nedostupne, .ocekavame, .posledni-kusy{
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+    display: flex;
+    margin-bottom: 0.5em;
+    align-items: center;
+}
+
+.skladem{
+    background-color: #006809;
+    max-width: 77.2px;
+}
+
+.nedostupne{
+    background-color: #890000;
+}
+
+.ocekavame{
+    background-color: #ff8c00;
+}
+
+.posledni-kusy{
+    background-color: #af4600;
 }
