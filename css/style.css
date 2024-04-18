@@ -85,6 +85,7 @@ a{
     list-style: none;
     text-decoration: none;
     color: white;
+    transition: 0.3s;
 }
 
 #cart-nav{
@@ -274,6 +275,7 @@ a{
 
 .ocekavame{
     background-color: #ff8c00;
+    max-width: 96.44px;
 }
 
 .posledni-kusy{

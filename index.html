@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
+    <!-- 
+    HEADER-NAV
+     -->
     <header>
         <a class="logo-nav" href="/"><img src="img/pokehublogotext.svg" alt="logo"></a>
         <nav class="navv">
@@ -31,6 +34,9 @@
             </ul>
         </nav>
     </header>
+    <!--
+    BANNER
+    -->
     <div class="banner-cont">
         <img class="banner" src="img/banner_masquerade2.jpg" alt="Předprodejový banner Twilight Masquerade">
         <div class="banner-textblock">
@@ -53,7 +59,7 @@
     <div class="akce-cont">
         <h1 id="akce">Akce</h1>
         <div class="akce-lane">
-            <div onclick="pridatDoKosiku(this)" data-nazev="PAF | Paldean Fates Booster Bundle" data-cena="649" class="card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="PAF | Paldean Fates Booster Bundle" class="card">
                 <div class="status">
                     <span class="skladem">Skladem</span>
                 </div>
@@ -69,7 +75,7 @@
                     </div>
                 </div>
             </div>
-            <div onclick="pridatDoKosiku(this)" data-nazev="PAR | Paradox Rift Booster Pack" data-cena="74" class="card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="PAR | Paradox Rift Booster Pack" class="card">
                 <div class="status">
                     <span class="skladem">Skladem</span>
                     <span class="posledni-kusy">Poslední kusy</span>
@@ -86,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div onclick="pridatDoKosiku(this)" data-nazev="OBF | Obsidian Flames Elite Trainer Box" data-cena="879" class="card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="OBF | Obsidian Flames Elite Trainer Box" class="card">
                 <div class="status">
                     <span class="skladem">Skladem</span>
                 </div>
@@ -102,7 +108,7 @@
                     </div>
                 </div>
             </div>
-            <div onclick="pridatDoKosiku(this)" data-nazev="PAL | Paldea Evolved Booster Pack" data-cena="70" class="card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="PAL | Paldea Evolved Booster Pack" class="card">
                 <div class="status">
                     <span class="skladem">Skladem</span>
                 </div>
@@ -126,7 +132,7 @@
     <div class="predprodej-cont">
         <h1 id="predprodej">Předprodej - Twilight Masquerade</h1>
         <div class="predprodej-lane">
-            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Elite Trainer Box" data-cena="979" class="card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Elite Trainer Box" class="card">
                 <div class="status">
                     <span class="ocekavame">Očekáváme</span>
                 </div>
@@ -141,7 +147,7 @@
                     </div>
                 </div>
             </div>
-            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Booster Box" data-cena="2999" class="card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Booster Box" class="card">
                 <div class="status">
                     <span class="ocekavame">Očekáváme</span>
                 </div>
@@ -156,7 +162,7 @@
                     </div>
                 </div>
             </div>
-            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Booster Pack" data-cena="89" class="card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Booster Pack"  class="card">
                 <div class="status">
                     <span class="ocekavame">Očekáváme</span>
                 </div>
@@ -182,7 +188,7 @@
         TEMPORAL FORCES
          -->
         <div id="temporalforces" class="produkty-lane">
-            <div onclick="pridatDoKosiku(this)" data-nazev="TEF | Temporal Forces Booster Pack" data-cena="89" class="card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="TEF | Temporal Forces Booster Pack"  class="card">
                 <div class="status">
                     <span class="skladem">Skladem</span>
                 </div>
@@ -197,7 +203,7 @@
                     </div>
                 </div>           
             </div>
-            <div onclick="pridatDoKosiku(this)" data-nazev="TEF | Temporal Forces Elite Trainer Box Flutter Mane" data-cena="89" class="card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="TEF | Temporal Forces Elite Trainer Box Flutter Mane"  class="card">
                 <div class="status">
                     <span class="ocekavame">Očekáváme</span>
                 </div>
@@ -212,7 +218,7 @@
                     </div>
                 </div>           
             </div>
-            <div onclick="pridatDoKosiku(this)" data-nazev="TEF | Temporal Forces Elite Trainer Box Iron Thorns" data-cena="89" class="card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="TEF | Temporal Forces Elite Trainer Box Iron Thorns"  class="card">
                 <div class="status">
                     <span class="skladem">Skladem</span>
                 </div>
@@ -227,7 +233,7 @@
                     </div>
                 </div>           
             </div>
-            <div onclick="pridatDoKosiku(this)" data-nazev="TEF | Temporal Forces Booster Box" data-cena="89" class="card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="TEF | Temporal Forces Booster Box"  class="card">
                 <div class="status">
                     <span class="skladem">Skladem</span>
                 </div>
@@ -246,8 +252,8 @@
         <!--
         PALDEAN FATES
         -->
-        <div class="produkty-lane">
-            <div onclick="pridatDoKosiku(this)" data-nazev="PAF | Paldean Fates Booster Bundle" data-cena="649" class="card">
+        <div id="paldeanfates" class="produkty-lane">
+            <div onclick="pridatDoKosiku(this)" data-nazev="PAF | Paldean Fates Booster Bundle"  class="card">
                 <div class="status">
                     <span class="skladem">Skladem</span>
                 </div>
@@ -263,45 +269,45 @@
                     </div>
                 </div>
             </div>
-            <div onclick="pridatDoKosiku(this)" data-nazev="PAF | Paldean Fates " data-cena="89" class="card">
+            <div onclick="nedostupne()" data-nazev="PAF | Paldean Fates Elite Trainer Box"  class="card">
                 <div class="status">
-                    <span class="ocekavame">Očekáváme</span>
+                    <span class="nedostupne">Nedostupné</span>
                 </div>
                 <div class="akce-photo">
-                    <img src="img/produkty/tw-masquerade-booster-pack.png" alt="">
+                    <img src="img/produkty/paldean-fates-etb.png" alt="">
                 </div>
                 <div class="akce-info">
-                    <h4 class="akce-title">PAF | Paldean Fates </h4>
+                    <h4 class="akce-title">PAF | Paldean Fates Elite Trainer Box</h4>
                     <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
                     <div class="akce-price-cont">
-                        <p class="akce-price">89 Kč</p>
+                        <p class="akce-price">1049 Kč</p>
                     </div>
                 </div>           
             </div>
-            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Booster Pack" data-cena="89" class="card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="PAF | Paldean Fates Mini Tin Random"  class="card">
                 <div class="status">
-                    <span class="ocekavame">Očekáváme</span>
+                    <span class="skladem">Skladem</span>
                 </div>
                 <div class="akce-photo">
-                    <img src="img/produkty/tw-masquerade-booster-pack.png" alt="">
+                    <img src="img/produkty/paldean-fates-mini-tin-flamingo.png" alt="">
                 </div>
                 <div class="akce-info">
-                    <h4 class="akce-title">TWM | Twilight Masquerade Booster Pack</h4>
+                    <h4 class="akce-title">PAF | Paldean Fates Mini Tin Random</h4>
                     <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
                     <div class="akce-price-cont">
-                        <p class="akce-price">89 Kč</p>
+                        <p class="akce-price">249 Kč</p>
                     </div>
                 </div>           
             </div>
-            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Booster Pack" data-cena="89" class="card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="PAF | Paldean Fates Tin Random"  class="card">
                 <div class="status">
-                    <span class="ocekavame">Očekáváme</span>
+                    <span class="skladem">Skladem</span>
                 </div>
                 <div class="akce-photo">
-                    <img src="img/produkty/tw-masquerade-booster-pack.png" alt="">
+                    <img src="img/produkty/paldean-fates-tin-charizard.png" alt="">
                 </div>
                 <div class="akce-info">
-                    <h4 class="akce-title">TWM | Twilight Masquerade Booster Pack</h4>
+                    <h4 class="akce-title">PAF | Paldean Fates Tin Random</h4>
                     <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
                     <div class="akce-price-cont">
                         <p class="akce-price">89 Kč</p>
@@ -310,63 +316,329 @@
             </div>
         </div>
         <div class="produkty-lane">
-            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Booster Pack" data-cena="89" class="card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="PAF | Paldean Fates Big Tin Random"  class="card">
                 <div class="status">
-                    <span class="ocekavame">Očekáváme</span>
+                    <span class="skladem">Skladem</span>
+                    <span class="posledni-kusy">Poslední kusy</span>
                 </div>
                 <div class="akce-photo">
-                    <img src="img/produkty/tw-masquerade-booster-pack.png" alt="">
+                    <img src="img/produkty/paldean-fates-big-tin-zard.png" alt="">
                 </div>
                 <div class="akce-info">
-                    <h4 class="akce-title">TWM | Twilight Masquerade Booster Pack</h4>
+                    <h4 class="akce-title">PAF | Paldean Fates Big Tin Random</h4>
                     <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
                     <div class="akce-price-cont">
-                        <p class="akce-price">89 Kč</p>
+                        <p class="akce-price">699 Kč</p>
                     </div>
                 </div>           
             </div>
-            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Booster Pack" data-cena="89" class="card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="PAF | Paldean Fates Premium Collection Random"  class="card">
                 <div class="status">
-                    <span class="ocekavame">Očekáváme</span>
+                    <span class="skladem">Skladem</span>
                 </div>
                 <div class="akce-photo">
-                    <img src="img/produkty/tw-masquerade-booster-pack.png" alt="">
+                    <img src="img/produkty/paldean-fates-premium-collection.png" alt="">
                 </div>
                 <div class="akce-info">
-                    <h4 class="akce-title">TWM | Twilight Masquerade Booster Pack</h4>
+                    <h4 class="akce-title">PAF | Paldean Fates Premium Collection Random</h4>
                     <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
                     <div class="akce-price-cont">
-                        <p class="akce-price">89 Kč</p>
+                        <p class="akce-price">999 Kč</p>
                     </div>
                 </div>           
             </div>
-            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Booster Pack" data-cena="89" class="card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="PAF | Paldean Fates Tech Sticker Collection"  class="card">
                 <div class="status">
-                    <span class="ocekavame">Očekáváme</span>
+                    <span class="skladem">Skladem</span>
                 </div>
                 <div class="akce-photo">
-                    <img src="img/produkty/tw-masquerade-booster-pack.png" alt="">
+                    <img src="img/produkty/paldean-fates-tech-sticker-collection.png" alt="">
                 </div>
                 <div class="akce-info">
-                    <h4 class="akce-title">TWM | Twilight Masquerade Booster Pack</h4>
+                    <h4 class="akce-title">PAF | Paldean Fates Tech Sticker Collection</h4>
                     <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
                     <div class="akce-price-cont">
-                        <p class="akce-price">89 Kč</p>
+                        <p class="akce-price">399 Kč</p>
                     </div>
                 </div>           
             </div>
-            <div onclick="pridatDoKosiku(this)" data-nazev="TWM | Twilight Masquerade Booster Pack" data-cena="89" class="card">
+            <div onclick="pridatDoKosiku(this)" data-nazev="PAF | Paldean Fates Mini Tin x10 - sealed box"  class="card">
                 <div class="status">
                     <span class="ocekavame">Očekáváme</span>
                 </div>
                 <div class="akce-photo">
-                    <img src="img/produkty/tw-masquerade-booster-pack.png" alt="">
+                    <img src="img/produkty/paldean-fates-mini-tin-display-box.png" alt="">
                 </div>
                 <div class="akce-info">
-                    <h4 class="akce-title">TWM | Twilight Masquerade Booster Pack</h4>
+                    <h4 class="akce-title">PAF | Paldean Fates Mini Tin x10 - sealed box</h4>
                     <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
                     <div class="akce-price-cont">
-                        <p class="akce-price">89 Kč</p>
+                        <p class="akce-price">2 449 Kč</p>
+                    </div>
+                </div>           
+            </div>
+        </div>
+        <!--
+        PARADOX RIFT
+        -->
+        <div id="paradoxrift" class="produkty-lane">
+            <div onclick="pridatDoKosiku(this)" data-nazev="PAR | Paradox Rift Booster Pack" class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                    <span class="posledni-kusy">Poslední kusy</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/paradox-rift-booster-garchomp.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 id="produkt-nazev" class="akce-title">PAR | Paradox Rift Booster Pack</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">74 Kč</p>
+                        <p class="akce-price-sleva">89 Kč</p>
+                    </div>
+                </div>
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="PAR | Paradox Rift Elite Trainer Box Iron Valiant"  class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/paradox-rift-etb-iron-valiant.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">PAR | Paradox Rift Elite Trainer Box Iron Valiant</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">949 Kč</p>
+                    </div>
+                </div>           
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="PAR | Paradox Rift Elite Trainer Box Roaring Moon"  class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/paradox-rift-etb-roaring-moon.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">PAR | Paradox Rift Elite Trainer Box Roaring Moon</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">949 Kč</p>
+                    </div>
+                </div>           
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="PAR | Paradox Rift Booster Box"  class="card">
+                <div class="status">
+                    <span class="nedostupne">Nedostupné</span>
+                    <span class="ocekavame">Očekáváme</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/paradox-rift-bb.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">PAR | Paradox Rift Booster Box</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">2 639 Kč</p>
+                    </div>
+                </div>           
+            </div>
+        </div>
+        <!--
+        OBSIDIAN FLAMES
+        -->
+        <div id="obsidianflames" class="produkty-lane">
+            <div onclick="pridatDoKosiku(this)" data-nazev="OBF | Obsidian Flames Booster Pack" class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/obsidian-flames-booster-pack.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 id="produkt-nazev" class="akce-title">OBF | Obsidian Flames Booster Pack</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">84 Kč</p>
+                    </div>
+                </div>
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="OBF | Obsidian Flames Elite Trainer Box" class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/obsidian-flames-etb-front.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">OBF | Obsidian Flames Elite Trainer Box</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">879 Kč</p>
+                        <p class="akce-price-sleva">1099 Kč</p>
+                    </div>
+                </div>
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="OBF | Obsidian Flames 3-Booster Blister Eevee"  class="card">
+                <div class="status">
+                    <span class="nedostupne">Nedostupné</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/obsidian-flames-eevee-promo-blister.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">OBF | Obsidian Flames <br> 3-Booster Blister Eevee</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">949 Kč</p>
+                    </div>
+                </div>           
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="OBF | Obsidian Flames "  class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/obsidian-flames-bb.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">OBF | Obsidian Flames Booster Box</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">2 719 Kč</p>
+                    </div>
+                </div>           
+            </div>
+        </div>
+        <!--
+        LIMITKY
+        -->
+        <div id="limitky" class="produkty-lane">
+            <div onclick="pridatDoKosiku(this)" data-nazev="EVO | XY-Evolutions Booster Pack" class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/evolutions-booster.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 id="produkt-nazev" class="akce-title">EVO | XY-Evolutions Booster Pack</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">779 Kč</p>
+                    </div>
+                </div>
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="EVO | XY-Evolutions Booster Box" class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                    <span class="posledni-kusy">Poslední kusy</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/evolutions-bb.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">EVO | XY-Evolutions Booster Box</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">26 899 Kč</p>
+                    </div>
+                </div>
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="MEW | 151 Booster Pack"  class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/151-booster.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">MEW | 151 <br>Booster Pack</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">151 Kč</p>
+                    </div>
+                </div>           
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="MEW | 151 Elite Trainer Box Snorlax"  class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                    <span class="posledni-kusy">Poslední kusy</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/151-etb.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">MEW | 151 Elite Trainer Box Snorlax</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">1 449 Kč</p>
+                    </div>
+                </div>           
+            </div>
+        </div>
+        <div class="produkty-lane">
+            <div onclick="pridatDoKosiku(this)" data-nazev="CEL | Celebrations Booster Pack" class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                    <span class="posledni-kusy">Poslední kusy</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/celebrations-booster.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 id="produkt-nazev" class="akce-title">CEL | Celebrations Booster Pack</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">309 Kč</p>
+                    </div>
+                </div>
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="CEL | Celebrations Elite Trainer Box" class="card">
+                <div class="status">
+                    <span class="nedostupne">Nedostupné</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/celebrations-etb.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">CEL | Celebrations Elite Trainer Box</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">2 999 Kč</p>
+                    </div>
+                </div>
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="s12a | VSTAR Universe Booster Pack"  class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty/vstar-universe-booster.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">s12a | VSTAR Universe Booster Pack</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">289 Kč</p>
+                    </div>
+                </div>           
+            </div>
+            <div onclick="pridatDoKosiku(this)" data-nazev="Pokémon TCG: Trading Card Game Classic"  class="card">
+                <div class="status">
+                    <span class="skladem">Skladem</span>
+                    <span class="posledni-kusy">Poslední kusy</span>
+                </div>
+                <div class="akce-photo">
+                    <img src="img/produkty//tcg-classic.png" alt="">
+                </div>
+                <div class="akce-info">
+                    <h4 class="akce-title">Pokémon TCG: Trading Card Game Classic</h4>
+                    <p class="akce-desc"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, quo</p>
+                    <div class="akce-price-cont">
+                        <p class="akce-price">9 499 Kč</p>
                     </div>
                 </div>           
             </div>

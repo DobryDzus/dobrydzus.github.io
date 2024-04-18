@@ -7,7 +7,13 @@ function pridatDoKosiku(divElement) {
 
     if (nazevProduktu) {
         kosikalert(nazevProduktu);
-    } else {
-        console.error('Název produktu nenalezen.');
+    } 
+    
+    else {
+        
     }
+}
+
+function nedostupne(divElement) {
+    alert('Produkt je dočasně nedostupný.');
 }
