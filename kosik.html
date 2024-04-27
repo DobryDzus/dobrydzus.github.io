@@ -18,16 +18,16 @@
         <nav class="navv">
             <ul class="navbar">
                 <li>
-                    <a class="link-nav" href="#produkty">Produkty</a>
+                    <a class="link-nav" href="index.html#produkty">Produkty</a>
                     <ul class="dropdown">
-                        <li onclick="location.href = '#temporalforces';" class="dp-item"><p>Temporal Forces</p></li> <!-- js tu je protoze kdyz nastavim padding tak to strasne-->
-                        <li onclick="location.href = '#paldeanfates';" class="dp-item"><p>Paldean Fates</p></li> <!-- blbne. neopravovat a nic nedelat jinak idk -->
-                        <li onclick="location.href = '#paradoxrift';" class="dp-item"><p>Paradox Rift</p></li>
-                        <li onclick="location.href = '#obsidianflames';" class="dp-item"><p>Obsidian Flames</p></li>
-                        <li onclick="location.href = '#limitky';" class="dp-item"><p>Limitky</p></li>
+                        <li onclick="location.href = 'index.html#temporalforces';" class="dp-item"><p>Temporal Forces</p></li> <!-- js tu je protoze kdyz nastavim padding tak to strasne-->
+                        <li onclick="location.href = 'index.html#paldeanfates';" class="dp-item"><p>Paldean Fates</p></li> <!-- blbne. neopravovat a nic nedelat jinak idk -->
+                        <li onclick="location.href = 'index.html#paradoxrift';" class="dp-item"><p>Paradox Rift</p></li>
+                        <li onclick="location.href = 'index.html#obsidianflames';" class="dp-item"><p>Obsidian Flames</p></li>
+                        <li onclick="location.href = 'index.html#limitky';" class="dp-item"><p>Limitky</p></li>
                     </ul>
                 </li>
-                <li><a class="link-nav" href="#akce">Akce</a></li>
+                <li><a class="link-nav" href="index.html#akce">Akce</a></li>
                 <li><a class="link-nav" href="grading.html">Asistovaný grading</a></li>
                 <li><a class="link-nav" href="vykup.html">Výkup</a></li>
                 <div class="divider-cart"></div>
@@ -35,12 +35,19 @@
             </ul>
         </nav>
     </header>
-    <table class="stav">
+    <h1>Košík</h1>
+    <table border="1" class="stav">
         <tr>
+            <th></th>
             <th>Produkt</th>
             <th>Cena</th>
             <th>Množství</th>
-            <th>Celkem</th>
+        </tr>
+        <tr>
+            <td class="bunka-img"><img src="img/produkty/temporal-forces-bb.png" alt=""></td>
+            <td>Temporal Forces - Booster Box</td>
+            <td class="bunka-cena">2 999 Kč</td>
+            <td class="bunka-mnozstvi"><input type="number" value="1" min="1" name="Mno" id="mnozstvi"></td>
         </tr>
 
     </table>
