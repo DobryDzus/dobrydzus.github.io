@@ -10,7 +10,7 @@ function pridatDoKosiku(divElement) {
     } 
     
     else {
-        
+        alert('Produkt je dočasně nedostupný.');
     }
 }
 

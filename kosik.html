@@ -36,20 +36,50 @@
         </nav>
     </header>
     <h1>Košík</h1>
-    <table border="1" class="stav">
-        <tr>
-            <th></th>
-            <th>Produkt</th>
-            <th>Cena</th>
-            <th>Množství</th>
-        </tr>
-        <tr>
-            <td class="bunka-img"><img src="img/produkty/temporal-forces-bb.png" alt=""></td>
-            <td>Temporal Forces - Booster Box</td>
-            <td class="bunka-cena">2 999 Kč</td>
-            <td class="bunka-mnozstvi"><input type="number" value="1" min="1" name="Mno" id="mnozstvi"></td>
-        </tr>
+    <div class="kosik">
+        <div class="stav-doprava">
+            <table border="1" class="stav">
+                <tr>
+                    <th></th>
+                    <th>Produkt</th>
+                    <th>Cena/ks</th>
+                    <th>Množství</th>
+                </tr>
+                <tr>
+                    <td class="bunka-img"><img src="img/produkty/temporal-forces-bb.png" alt=""></td>
+                    <td>Temporal Forces - Booster Box</td>
+                    <td class="bunka-cena">2 999 Kč</td>
+                    <td class="bunka-mnozstvi"><input type="number" value="1" min="1" id="mnozstvi"></td>
+                </tr>
+                <tr>
+                    <td class="bunka-img"><img src="img/produkty/151-booster.png" alt=""></td>
+                    <td>151 - Booster Pack</td>
+                    <td class="bunka-cena">151 Kč</td>
+                    <td class="bunka-mnozstvi"><input type="number" value="1" min="1" id="mnozstvi"></td>
+                </tr>
+            </table>
+            <div class="doprava">
+                <h2>Doprava</h2>
+                <div class="doprava-varianty">
+                    <div class="doprava-varianta">
+                        <input type="radio" name="doprava" id="doprava1" checked>
+                        <label for="doprava1">Osobní odběr</label>
+                    </div>
+                    <div class="doprava-varianta">
+                        <input type="radio" name="doprava" id="doprava2">
+                        <label for="doprava2">PPL</label>
+                    </div>
+                    <div class="doprava-varianta">
+                        <input type="radio" name="doprava" id="doprava3">
+                        <label for="doprava3">Česká pošta</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="checkout">
+            <h2>Celková cena</h2>
 
-    </table>
+            <button onclick="location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';">Pokračovat k platbě</button>
+        </div>
 </body>
 </html>

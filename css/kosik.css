@@ -1,7 +1,17 @@
 .stav{
     margin: 3rem 1rem;
-    width: 70%;
     height: 100%;
+    background-color: #0a0068;
+    color: white;
+}
+
+.stav-doprava{
+    
+    width: 70%;
+}
+
+.doprava{
+    margin: 3rem 1rem;
     background-color: #0a0068;
     color: white;
 }
@@ -32,3 +42,20 @@ h1{
     width: 3em;
 }
 
+.checkout{
+    color: white;
+    background-color: #0a0068;
+    margin-top: 3rem;
+    width: 25%;
+    text-align: center;
+    justify-content: end;
+}
+
+.cena{
+    align-content: center;
+}
+
+.kosik{
+    display: flex;
+    
+}
