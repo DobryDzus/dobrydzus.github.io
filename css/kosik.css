@@ -64,7 +64,7 @@ h1{
 }
 
 .doprava-varianta{
-    display: flex;
+    margin: 1em;
 }
 
 .doprava-cena{
