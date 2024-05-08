@@ -1,0 +1,25 @@
+.grading-btn{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+    flex-direction: column;
+    padding: 15px 25px;
+    border: none;
+    font-size: 19px;
+    color: #fff;
+    border-radius: 7px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    transition: 0.5s;
+    transition-property: box-shadow;
+    background: #0a0068;
+    box-shadow: 0 0 25px #0a0068;
+    cursor: pointer;
+}
+
+.grading-btn:hover{
+    box-shadow: 0 0 5px #0a0068,
+    0 0 25px #0a0068,
+    0 0 50px #0a0068
+}
+
