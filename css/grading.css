@@ -23,3 +23,29 @@
     0 0 50px #0a0068
 }
 
+.howto-cont{
+
+}
+
+.howto-title{
+    color: white;
+    text-align: center;
+}
+
+.howto-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px auto;
+    width: 70%;
+}
+
+.howto-block{
+    background-color: aliceblue;
+    height: 18em;
+    width: 12em;
+}
+
+.howto-block-title{
+    
+}
