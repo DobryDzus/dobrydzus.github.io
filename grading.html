@@ -18,16 +18,16 @@
         <nav class="navv">
             <ul class="navbar">
                 <li>
-                    <a class="link-nav" href="#produkty">Produkty</a>
+                    <a class="link-nav" href="index.html#produkty">Produkty</a>
                     <ul class="dropdown">
-                        <li onclick="location.href = '#temporalforces';" class="dp-item"><p>Temporal Forces</p></li> <!-- js tu je protoze kdyz nastavim padding tak to strasne-->
-                        <li onclick="location.href = '#paldeanfates';" class="dp-item"><p>Paldean Fates</p></li> <!-- blbne. neopravovat a nic nedelat jinak idk -->
-                        <li onclick="location.href = '#paradoxrift';" class="dp-item"><p>Paradox Rift</p></li>
-                        <li onclick="location.href = '#obsidianflames';" class="dp-item"><p>Obsidian Flames</p></li>
-                        <li onclick="location.href = '#limitky';" class="dp-item"><p>Limitky</p></li>
+                        <li onclick="location.href = 'index.html#temporalforces';" class="dp-item"><p>Temporal Forces</p></li>
+                        <li onclick="location.href = 'index.html#paldeanfates';" class="dp-item"><p>Paldean Fates</p></li>
+                        <li onclick="location.href = 'index.html#paradoxrift';" class="dp-item"><p>Paradox Rift</p></li>
+                        <li onclick="location.href = 'index.html#obsidianflames';" class="dp-item"><p>Obsidian Flames</p></li>
+                        <li onclick="location.href = 'index.html#limitky';" class="dp-item"><p>Limitky</p></li>
                     </ul>
                 </li>
-                <li><a class="link-nav" href="#akce">Akce</a></li>
+                <li><a class="link-nav" href="index.html#akce">Akce</a></li>
                 <li><a class="link-nav" href="grading.html">Asistovaný grading</a></li>
                 <li><a class="link-nav" href="vykup.html">Výkup</a></li>
                 <div class="divider-cart"></div>
@@ -44,7 +44,7 @@
                 </h1>
             </div>
             <p class="banner-text">
-                Zhodnoťte své karty a pošlete je s námi do Ameriky! <br> <br> <strong>210</strong> <br> spokojených zákazníků
+                Zhodnoťte své karty a pošlete je s námi do Ameriky! <br> <br> <strong>XXX</strong> <br> spokojených zákazníků
             </p>
             <p class="banner-text">
     
@@ -57,19 +57,57 @@
     </div>
 
     <div class="howto-cont" id="howto">
-        <h1 class="howto-title">Jak na to?</h1>
+        <h1 id="akce" class="howto-title">Jak na to?</h1>
         <div class="howto-row">
-            <div class="howto-block">
-                <h1 class="howto-block-title">1</h1>
+            <div onclick="location.href = '#formular';" id="fill" class="howto-block">
+                <h1 class="howto-block-title">1. Vyplňte formulář</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
             </div>
             <div class="howto-block">
-                <h1 class="howto-block-title">1</h1>
+                <h1 class="howto-block-title">2. Analýza</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
             </div>
             <div class="howto-block">
-                <h1 class="howto-block-title">1</h1>
+                <h1 class="howto-block-title">3. Zaslání karet</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
             </div>
             <div class="howto-block">
-                <h1 class="howto-block-title">1</h1>
+                <h1 class="howto-block-title">4. Doručení k Vám</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
             </div>
         </div>
+    </div>
+    <div class="doporuceni">
+        <h1 class="howto-title">Doporučení od zákazníků</h1>
+        <div class="doporuceni-row">
+            <div class="doporuceni-block">
+                <img src="img/grading/vorel.png" alt="Zákazník 1">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                <p>⭐⭐⭐⭐⭐</p>
+            </div>
+            <div class="doporuceni-block">
+                <img src="img/grading/pacner.jpg" alt="Zákazník 2">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                <p>⭐⭐⭐⭐</p>
+            </div>
+            <div class="doporuceni-block">
+                <img src="img/grading/yehorek.jpg" alt="Zákazník 3">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+                <p>⭐⭐⭐⭐⭐</p>
+            </div>
+        </div>
+    </div>
+    <div id="formular" class="formular">
+        <h1 class="howto-title">Napište nám</h1>
+        <form>
+            <label for="jmeno">Jméno</label>
+            <input type="text" id="jmeno" name="jméno" required>
+            <label for="prijmeni">Příjmení</label>
+            <input type="text" id="prijmeni" name="příjmení" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="zprava">Kolik karet máte?</label>
+            <textarea id="zprava" name="zprava" required></textarea>
+            <input type="submit" value="Odeslat">
+        </form>
     </div>
