@@ -31,7 +31,7 @@ header {
     padding: 0 20px;
 }
 
-a{
+.navbar a{
     text-decoration: none;
     color: white;
 

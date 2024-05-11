@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PokéHub - Asistovaný grading</title>
+    <title>PokéHub - Výkup karet</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/grading.css">
     <link rel="stylesheet" href="css/vykup.css">
     <link rel="shortcut icon" href="img/ico/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
@@ -35,3 +36,97 @@
             </ul>
         </nav>
     </header>
+    <div class="banner-cont">
+        <img class="banner" src="img/banner-vykup.png" alt="Banner Asistovaný grading">
+        <div class="banner-textblock">
+            <div class="banner-title">
+                <h1>
+                    Výkup Pokémon karet
+                </h1>
+            </div>
+            <p class="banner-text">
+                Prodej své karty za nejlepší ceny na trhu a zažij pořádnou cinkačku! <br> <br> <strong>XXX</strong> <br> úspěšných výkupů
+            </p>
+        </div>
+    
+    <button onclick="location.href = '#howto';" class="grading-btn">
+        Začít
+    </button>
+    </div>
+    <div class="howto-cont" id="howto">
+        <h1 class="howto-title">Jak na to?</h1>
+        <div class="howto-row">
+            <div onclick="location.href = '#formular';" id="fill" class="howto-block">
+                <h1 class="howto-block-title">1. Vyplňte formulář</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+            </div>
+            <div class="howto-block">
+                <h1 class="howto-block-title">2. Analýza</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+            </div>
+            <div class="howto-block">
+                <h1 class="howto-block-title">3. Zaslání karet</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+            </div>
+            <div class="howto-block">
+                <h1 class="howto-block-title">4. Zaslání peněz</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit..</p>
+            </div>
+        </div>
+    </div>
+    <div class="karty">
+        <h1 class="howto-title">Jaké karty přijímáme?</h1>
+        <div class="karty-row">
+            <div class="karty-block">
+                <h1 class="karty-title-nm">Přijímáme ✅</h1>
+                <ul class="karty-list">
+                    <li>Nové karty i vintage karty</li>
+                    <li>Anglický nebo japonský jazyk</li>
+                    <li>Perfektní stav s menšími <br> nebo žádnými známkami poškození</li>
+                </ul>
+                <img src="img/kondice/good-condition.png" alt="">
+            </div>
+            <div class="karty-block">
+                <h1 class="karty-title-po">Nepříjimáme ❌</h1>
+                <ul class="karty-list">
+                    <li>Známky poškození</li>
+                    <li>Ohnuté rohy</li>
+                    <li>Poškrábaný povrh</li>
+                    <li>Jakýkoliv jiný než anglický nebo japonský jazyk</li>
+                    <li>Falešné nebo padělané karty</li>
+                </ul>
+                <img src="img/kondice/bad-condition.png" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="tabulky">
+        <h1 class="howto-title">Jak vyplnit tabulku?</h1>
+        <div class="tabulky-row">
+            <div class="tabulky-block">
+                <ul class="tabulky-list">
+                    <li><a href="misc/sablona-vykup.xlsx" download>1. Stáhněte si šablonu</a></li>
+                    <li>2. Vyplňte všechny sloupce podle předlohy</li>
+                    <li>Stav karty poznáte podle této <a href="https://www.bigorbitcards.co.uk/pokemon-card-condition-guide.html">stránky</a></li>
+                    <li>3. Pošlete nám vyplněnou tabulku</li>
+                </ul>
+                <img class="tabulky-img" src="img/template-tabulky.png" alt="Vyplňená šablona">
+                <button class="vykup-btn">
+                    <a href="misc/sablona-vykup.xlsx" download>Stáhnout šablonu</a>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div id="formular" class="formular">
+        <h1 class="howto-title">Napište nám</h1>
+        <form>
+            <label for="jmeno">Jméno</label>
+            <input type="text" id="jmeno" name="jméno" required>
+            <label for="prijmeni">Příjmení</label>
+            <input type="text" id="prijmeni" name="příjmení" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label class="upload" for="fotky">Zašlete nám vyplňenou tabulku</label>
+            <input type="file" id="fotky" name="fotky" accept=".xlsx, .xls, .ods, .sxc, .dif" required>
+            <input type="submit" value="Odeslat">
+        </form>
+    </div>
