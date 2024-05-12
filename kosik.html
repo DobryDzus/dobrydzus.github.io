@@ -36,50 +36,68 @@
         </nav>
     </header>
     <h1>Košík</h1>
-    <div class="kosik">
-        <div class="stav-doprava">
-            <table border="1" class="stav">
-                <tr>
-                    <th></th>
-                    <th>Produkt</th>
-                    <th>Cena/ks</th>
-                    <th>Množství</th>
-                </tr>
-                <tr>
-                    <td class="bunka-img"><img src="img/produkty/temporal-forces-bb.png" alt=""></td>
-                    <td>Temporal Forces - Booster Box</td>
-                    <td class="bunka-cena">2 999 Kč</td>
-                    <td class="bunka-mnozstvi"><input type="number" value="1" min="1" id="mnozstvi"></td>
-                </tr>
-                <tr>
-                    <td class="bunka-img"><img src="img/produkty/151-booster.png" alt=""></td>
-                    <td>151 - Booster Pack</td>
-                    <td class="bunka-cena">151 Kč</td>
-                    <td class="bunka-mnozstvi"><input type="number" value="1" min="1" id="mnozstvi"></td>
-                </tr>
-            </table>
-            <div class="doprava">
-                <h2>Doprava</h2>
-                <div class="doprava-varianty">
-                    <div class="doprava-varianta">
-                        <input type="radio" name="doprava" id="doprava1" checked>
-                        <label for="doprava1">Osobní odběr <p class="doprava-cena">Zdarma</p></label>
-                    </div>
-                    <div class="doprava-varianta">
-                        <input type="radio" name="doprava" id="doprava2">
-                        <label for="doprava2">Zásilkovna <p class="doprava-cena">Zdarma</p></label>
-                    </div>
-                    <div class="doprava-varianta">
-                        <input type="radio" name="doprava" id="doprava3">
-                        <label for="doprava3">Česká pošta <p class="doprava-cena">Zdarma</p></label>
-                    </div>
-                </div>
+    <div class="kosik-cont">
+        <div class="kosik-left">
+            <div class="kosik-souhrn">
+                <table>
+                    <tr>
+                        <th></th>
+                        <th>Produkt</th>
+                        <th>Množství</th>
+                        <th>Cena</th>
+                    </tr>
+                    <tr>
+                        <td><img src="img/produkty/temporal-forces-bb.png" alt=""></td>
+                        <td>Temporal Forces - Booster Box</td>
+                        <td>1</td>
+                        <td>2 999 Kč</td>
+                        <td><button>❌</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="img/produkty/151-booster.png" alt=""></td>
+                        <td>151 - Booster Pack</td>
+                        <td>2</td>
+                        <td>302 Kč</td>
+                        <td><button>❌</button></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="kosik-doprava">
+                <form>
+                    <input type="radio" name="doprava" value="osobniodber">
+                    <label for="osobniodber">Osobní odběr - Zdarma</label>
+                    <input type="radio" name="doprava" value="zasilkovna">
+                    <label for="zasilkovna">Zásilkovna - 69 Kč</label>
+                    <input type="radio" name="doprava" value="ppl">
+                    <label for="ppl">PPL - 99 Kč</label>
+                </form>
             </div>
         </div>
-        <div class="checkout">
-            <h2>Celková cena</h2>
-
-            <button><a target="_blank" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ'https://www.youtube.com/watch?v=dQw4w9WgXcQ'">Pokračovat k platbě</a></button>
+        <div class="kosik-celkove">
+            <form>
+                <h2>Osobní údaje</h2>
+                <div class="form-group">
+                    <div class="form-osobniudaje">
+                        <label for="jmeno">Jméno</label>
+                        <input type="text" id="jmeno" name="jméno" required>
+                    </div>
+                    <div class="form-osobniudaje">
+                        <label for="prijmeni">Příjmení</label>
+                        <input type="text" id="prijmeni" name="příjmení" required>
+                    </div>
+                </div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="telefon">Telefon</label>
+                <input type="tel" id="telefon" name="telefon" required>
+                <label for="adresa">Ulice a číslo popisné</label>
+                <input type="text" id="adresa" name="adresa" required>
+                <input type="submit" value="Odeslat">
+            </form>
+            <h3>Produkty celkově: 3 301 Kč</h3>
+            <h3>Doprava celkově: 69 Kč</h3>
+            <h2>Celkem: 3 370 Kč</h2>
         </div>
+    </div>
 </body>
 </html>
