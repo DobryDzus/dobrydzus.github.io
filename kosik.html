@@ -269,4 +269,18 @@
         </div>
     </div>
 </body>
+<script>
+(window).scroll(function(){
+        if ($(document).scrollTop() > 1){
+            console.log('scroll');
+            $('#header').addClass('headerScroll').css('opacity',0.8);
+            $('.wrapper').addClass('wrapperScroll');
+            $('#header_container').addClass("shadow");
+        } else {
+            $('#header').removeClass('headerScroll').css('opacity',1);;
+            $('.wrapper').removeClass('wrapperScroll');
+            $('#header_container').removeClass("shadow");
+        }
+    });
+</script>
 </html>

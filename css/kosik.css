@@ -22,7 +22,7 @@ h1{
 }
 
 .kosik-celkove{
-    position: sticky;
+    position: static;
     background-color: #f7f7f7;
     width: 20%;
     border-radius: 10px;
