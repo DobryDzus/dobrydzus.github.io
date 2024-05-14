@@ -22,13 +22,14 @@ h1{
 }
 
 .kosik-celkove{
-    position: static;
+    position: sticky;
     background-color: #f7f7f7;
     width: 20%;
     border-radius: 10px;
     color: #06003a;
     max-height: 70vh;
     top: 80px;
+    overflow: hidden;
 }
 
 table{

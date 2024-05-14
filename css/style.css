@@ -284,3 +284,29 @@ header {
 .posledni-kusy{
     background-color: #af4600;
 }
+
+footer{
+    width: 100%;
+    background-color: #0a0068;
+    height: 30vh;
+    color: white;
+}
+
+.footer-lane{
+    display: flex;
+    justify-content: space-around;
+    padding: 5vh 5%;
+}
+
+.footer-lane div ul{
+    list-style-type: none;
+}
+
+.footer-lane div ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer-lane div ul li a:hover{
+    text-decoration: underline;
+}
