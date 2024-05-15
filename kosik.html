@@ -261,7 +261,7 @@
                 <input type="tel" id="telefon" name="telefon" required>
                 <label for="adresa">Ulice a číslo popisné</label>
                 <input type="text" id="adresa" name="adresa" required>
-                <input type="submit" value="Odeslat">
+                <input type="submit" value="Pokračovat k platbě">
             </form>
             <h3>Produkty celkově: 3 301 Kč</h3>
             <h3>Doprava celkově: 69 Kč</h3>
@@ -269,18 +269,4 @@
         </div>
     </div>
 </body>
-<script>
-(window).scroll(function(){
-        if ($(document).scrollTop() > 1){
-            console.log('scroll');
-            $('#header').addClass('headerScroll').css('opacity',0.8);
-            $('.wrapper').addClass('wrapperScroll');
-            $('#header_container').addClass("shadow");
-        } else {
-            $('#header').removeClass('headerScroll').css('opacity',1);;
-            $('.wrapper').removeClass('wrapperScroll');
-            $('#header_container').removeClass("shadow");
-        }
-    });
-</script>
 </html>

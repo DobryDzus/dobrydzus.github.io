@@ -9,7 +9,6 @@ h1{
     color: #06003a;
     justify-content: space-around;
     flex-direction: row;
-    overflow: hidden;
 }
 
 .kosik-left{
@@ -27,9 +26,11 @@ h1{
     width: 20%;
     border-radius: 10px;
     color: #06003a;
-    max-height: 70vh;
-    top: 80px;
+    max-height: 85vh;
+    top: 100px;
     overflow: hidden;
+    padding: 20px;
+    
 }
 
 table{
