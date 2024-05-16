@@ -122,3 +122,7 @@ button{
     box-shadow: none;
     cursor: pointer;
 }
+
+footer{
+    margin-top: 50px;
+}
