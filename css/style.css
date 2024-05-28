@@ -286,16 +286,16 @@ header {
 }
 
 footer{
-    width: 100%;
-    background-color: #0a0068;
-    height: 30vh;
     color: white;
 }
 
 .footer-lane{
     display: flex;
     justify-content: space-around;
-    padding: 5vh 5%;
+    padding: 7.5vh 5%;
+    width: 100%;
+    background-color: #0a0068;
+    height: 30vh;
 }
 
 .footer-lane div ul{
@@ -396,3 +396,14 @@ footer{
     0 0 25px #0a0068,
     0 0 50px #0a0068
 }
+<<<<<<< Updated upstream
+=======
+
+.fa-brands{
+    transition: ease-in-out 0.3s;
+}
+
+.fa-brands:hover{
+    scale: 1.05;
+}
+>>>>>>> Stashed changes
