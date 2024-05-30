@@ -106,7 +106,7 @@ function initMap() {
     new google.maps.Marker({
       position: { lat: 50.108, lng: 14.584 },
       map,
-      title: "Hello World!",
+      title: "Centrum Černý Most!",
     });
   }
   
