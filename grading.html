@@ -118,7 +118,11 @@
         </form>
     </div>
     <footer>
-        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4303.522564091498!2d14.579205690772959!3d50.10706911802321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470bed5bf0c63175%3A0xcb0d338acc7c2077!2zQ2VudHJ1bSDEjGVybsO9IE1vc3Q!5e0!3m2!1scs!2scz!4v1715851095282!5m2!1scs!2scz" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div id="map" class="map"></div>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+            defer
+        ></script>
         <div class="footer-cont">
             <div class="footer-lane">
                 <div class="footer-info">
@@ -155,4 +159,5 @@
         </div>
      </footer>
 </body>
+<script src="script.js"></script>
 </html>
