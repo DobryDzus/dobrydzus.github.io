@@ -19,21 +19,16 @@ function nedostupne(divElement) {
 }
 
 function initMap() {
-    // Styles a map in night mode.
-    const map = new google.maps.Map(document.getElementById("map"), {
+    const map = new google.maps.Map(document.getElementById("map"),
+     {
       center: { lat: 50.108, lng: 14.584 },
-      zoom: 11,
+      zoom: 14,
       styles: [
         { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
         { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
         { elementType: "labels.text.fill", stylers: [{ color: "#746855" }] },
         {
           featureType: "administrative.locality",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#d59563" }],
-        },
-        {
-          featureType: "poi",
           elementType: "labels.text.fill",
           stylers: [{ color: "#d59563" }],
         },
@@ -46,6 +41,10 @@ function initMap() {
           featureType: "poi.park",
           elementType: "labels.text.fill",
           stylers: [{ color: "#6b9a76" }],
+        },
+        {
+          featureType: "poi.business",
+          stylers: [{ visibility: "off" }],
         },
         {
           featureType: "road",
@@ -103,6 +102,11 @@ function initMap() {
           stylers: [{ color: "#17263c" }],
         },
       ],
+    });
+    new google.maps.Marker({
+      position: { lat: 50.108, lng: 14.584 },
+      map,
+      title: "Hello World!",
     });
   }
   
