@@ -404,3 +404,12 @@ footer{
 .fa-brands:hover{
     scale: 1.05;
 }
+
+.info-window{
+    color: black;
+    text-align: center;
+}
+
+.info-window img{
+    width: 25%;
+}

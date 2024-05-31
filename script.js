@@ -18,11 +18,16 @@ function nedostupne(divElement) {
     alert('Produkt je dočasně nedostupný.');
 }
 
-function initMap() {
+async function initMap() {
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary(
+    "marker",
+  );
     const map = new google.maps.Map(document.getElementById("map"),
      {
       center: { lat: 50.108, lng: 14.584 },
       zoom: 14,
+      mapId: "3f84587718826a6",
       styles: [
         { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
         { elementType: "labels.text.stroke", stylers: [{ color: "#242f3e" }] },
@@ -103,11 +108,31 @@ function initMap() {
         },
       ],
     });
-    new google.maps.Marker({
+
+    const contentstring = 
+    `<div class="info-window" style="max-width=200px">` +
+      `<img src="img/ccm.jpg">` +
+      `<h2>Adresa</h2>` +
+      `<p>Chlumecká 765/6, 198 19 Praha 9</p>` +
+      `<a href="https://maps.app.goo.gl/YC3GVb49LeAVu9vH8">Navigovat</a>` +
+    `</div>`;
+    
+
+    const infowindow = new google.maps.InfoWindow({
+      content: contentstring,
+    });
+
+    const marker = new AdvancedMarkerElement({
       position: { lat: 50.108, lng: 14.584 },
       map,
-      title: "Centrum Černý Most!",
+      title: "Hello World!",
+
+    });
+
+    marker.addListener("click", () => {
+      infowindow.open(map, marker);
     });
   }
+  
   
   window.initMap = initMap;
